@@ -7,7 +7,7 @@ echo "=== SIMULACIÓN: EXFILTRACIÓN DE DATOS VÍA DNS ==="
 echo "Dato original: $DATOS_SENSIBLES"
 echo "Dato codificado: $DATOS_CODIFICADOS"
 echo "Consulta DNS simulada:"
-echo "${DATOS_CODIFICADOS}.servidor-web-dmz.onrender.com"
+echo "${DATOS_CODIFICADOS}.laboratorio-ciberseguridad-calvarez.onrender.com"
 
 echo "=== SIMULACIÓN FINALIZADA ==="
 
