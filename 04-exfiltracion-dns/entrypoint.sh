@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 DATOS_SENSIBLES="dato_prueba_ciberseguridad_2026"
