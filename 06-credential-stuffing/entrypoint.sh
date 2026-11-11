@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 USUARIOS="admin root user docente gestor"
