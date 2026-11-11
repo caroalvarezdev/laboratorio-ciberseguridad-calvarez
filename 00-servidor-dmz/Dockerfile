@@ -1,14 +1,10 @@
 
-FROM alpine:latest
-
-RUN apk add --no-cache python3
-
-COPY entrypoint.sh /entrypoint.sh
-
-RUN chmod +x /entrypoint.sh
+FROM python:alpine
 
 WORKDIR /app
 
+COPY app.py /app/app.py
+
 EXPOSE 8080
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["python", "app.py"]
