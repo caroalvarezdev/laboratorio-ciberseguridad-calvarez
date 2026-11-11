@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 TARGET="https://laboratorio-ciberseguridad-calvarez.onrender.com"
